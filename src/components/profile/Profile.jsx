@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import p from "./Profile.module.css"
 export const Profile = ({
     avatar,
     tag,
@@ -6,30 +7,30 @@ export const Profile = ({
     location,
     stats,
 }) => {
-    return <div class="profile">
-  <div class="description">
+    return <div className={p.profile}>
+  <div className={p.description}>
     <img
       src={avatar}
       alt={tag}
-      class="avatar"
+      className={p.avatar}
     />
-    <p class="name">{username}</p>
-    <p class="tag">@{tag}</p>
-    <p class="location">{location}</p>
+    <p className={p.name}>{username}</p>
+    <p className={p.tag}>@{tag}</p>
+    <p className={p.location}>{location}</p>
   </div>
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{stats.followers.toLocaleString('en-US')}</span>
+  <ul className={p.stats}>
+    <li className={p.listItem}>
+      <span className={p.label}>Followers</span>
+      <span className={p.quantity}>{stats.followers.toLocaleString('en-US')}</span>
     </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">{stats.views.toLocaleString('en-US')}</span>
+    <li className={p.listItem}>
+      <span className={p.label}>Views</span>
+      <span className={p.quantity}>{stats.views.toLocaleString('en-US')}</span>
     </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{stats.likes.toLocaleString('en-US')}</span>
+    <li className={p.listItem}>
+      <span className={p.label}>Likes</span>
+      <span className={p.quantity}>{stats.likes.toLocaleString('en-US')}</span>
     </li>
   </ul>
 </div>

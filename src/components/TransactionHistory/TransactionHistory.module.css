@@ -1,0 +1,24 @@
+/* .transactionHistory {
+    margin: 20px;
+    width: 500px;
+}
+.dataItem {
+    border: 1px solid;
+} */
+
+.transactionHistory {
+  margin: 20px;
+  border-collapse: collapse;
+  width: 500px;
+}
+
+.dataItem {
+  border: 1px solid;
+  padding: 8px;
+  text-align: center;
+}
+
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
